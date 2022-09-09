@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme&family=Alegreya:ital@0;1&family=Amatic+SC:wght@400;700&family=Encode+Sans+Condensed:wght@200;300;400;500&family=Kaushan+Script&family=Noticia+Text&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+
+    <title>Busy Bee Spaces: Membership</title>
+</head>
+
+<body>
+<!--Nabvar Top-->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top" id="topNavbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#busyBeeNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="busyBeeNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Membership</a></li>
+                        <li class="nav-item"><a class="nav-link" href="spaces.html">Spaces</a></li>
+                        <li class="nav-item"><a class="nav-link navbar-brand" href="index.html" id="busyBeeLogo">Busy Bee Spaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Perks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Hero Image-->
+    <div class="hero-image" id="membershipHero">
+        <div class="hero-text">
+            <h1>Membership</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row row-content">
+            <div class="col">
+                <div class="card mt-3 mb-3">
+                    <blockquote class="blockquote card-body">
+                        <p class="mb-0">The power of one, if fearless and focused, is formidable, but the power of many working together is better.</p>
+                        <footer class="blockquote-footer">Gloria Macapagal Arroyo</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+<!--Book Tour Modal-->
+<div id="bookTourModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Book a Tour</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-sm-6 col-form-label">Date</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-4 col-form-label" for="loginEmail">Email address</label>
+                            <div class="col-12 col-sm-8">
+                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button id="confirmBookTour" type="submit" class="btn btn-sm ml-1">Book Tour</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="row row-content">
+            <div class="col-sm-6 my-auto">
+                <h3>Membership</h3>
+                <p>Our coworking memberships offer access to our physical space, but also provide a variety of benefits and perks. Contact us to determine which would be the best fit for you!</p>
+                <button id="bookTourButton" class="btn btn-lg">Book a Tour</button>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <h3 class="card-header">Membership At a Glance</h3>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <th>Worker Bee</th>
+                                        <td>$50/month</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Busy Bee</th>
+                                        <td>$100/month</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Busier Bee</th>
+                                        <td>$200/month</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Queen Bee</th>
+                                        <td>$250/month</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content mt-3 mb-3">
+            <div class="col">
+                <div class="table-responsive" id="membershipTable">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Worker Bee</th>
+                                <th>Busy Bee</th>
+                                <th>Busier Bee</th>
+                                <th>Queen Bee</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Price / month</th>
+                                <td>$50</td>
+                                <td>$100</td>
+                                <td>$200</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr>
+                                <th>Dedicated Desk</th>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Access to working space</th>
+                                <td>5 days / month</td>
+                                <td>10 days / month</td>
+                                <td>15 days / month</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <th>Hours of Access</th>
+                                <td>M-F 8am - 6pm</td>
+                                <td>M-F 8am - 6pm</td>
+                                <td>24 / 7</td>
+                                <td>24 / 7</td>
+                            </tr>
+                            <tr>
+                                <th>Incl. meeting room hours</th>
+                                <td>1h / month</td>
+                                <td>2h / month</td>
+                                <td>4h / month</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <th>Access to phone rooms</th>
+                                <td>Included</td>
+                                <td>Included</td>
+                                <td>Included</td>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Cotivation Program</th>
+                                <td>Included</td>
+                                <td>Included</td>
+                                <td>Included</td>
+                                <td>Included</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Navbar Bottom -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" id="bottomNavbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#beeNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="beeNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="spaces.html">Spaces</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-brand" href="index.html" id="beeLogo">Busy Bee Spaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Perks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row row-content text-center">
+                    <div class="col-12">
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook-square fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter-square fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://linkedin.com"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+</body>
+</html>

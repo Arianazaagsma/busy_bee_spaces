@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme&family=Alegreya:ital@0;1&family=Amatic+SC:wght@400;700&family=Encode+Sans+Condensed:wght@200;300;400;500&family=Kaushan+Script&family=Noticia+Text&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+
+    <title>Busy Bee Spaces: A coworking hive for busy bees to complete their work in peace.</title>
+</head>
+
+<body>
+<!--Navbar Top-->
+<header>
+<nav class="navbar navbar-expand-sm navbar-light sticky-top" id="topNavbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#busyBeeNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="busyBeeNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="spaces.html">Spaces</a></li>
+                <li class="nav-item active"><a class="nav-link navbar-brand" href="#" id="busyBeeLogo">Busy Bee Spaces</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Perks</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<!-- Hero Image-->    
+    <div class="hero-image" id="indexHero">
+        <div class="hero-text">
+            <h1>Busy Bee Spaces</h1>
+            <p>A coworking hub for busy bees to complete their work in peace</p>
+            <button id="bookTourButton" class="btn btn-lg">Book a Tour</button>
+        </div>
+    </div>
+
+<!--Book Tour Modal-->
+    <div id="bookTourModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Book a Tour</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <label for="date" class="col-12 col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12 col-sm-4 col-form-label" for="loginEmail">Email address</label>
+                                <div class="col-12 col-sm-8">
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button id="confirmBookTour" type="submit" class="btn btn-sm ml-1">Book Tour</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--Page Content-->
+    <div class="container mt-2">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail img-fluid" src="img/shared_office_space.jpeg">
+                    <div class="media-body align-self-center">
+                        <h1><b>Join your hive!</b></h1>
+                        <h4 class="d-none d-sm-block">Our co-working space has everything you need to create your perfect work flow.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h1><b>Great ideas thrive here!</b></h1>
+                        <h4 class="d-none d-sm-block">Whether an independent contractor or part of an eclectic team, great ideas are found in the right space.</h4>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail" src="img/working_together.jpeg" alt="An group of people sit together at a table; above their heads, a light bulb is on, representing their ability to come up with bright ideas together." />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Navbar Bottom -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" id="bottomNavbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#beeNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="beeNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="spaces.html">Spaces</a></li>
+                <li class="nav-item active"><a class="nav-link navbar-brand" href="#" id="beeLogo">Busy Bee Spaces</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Perks</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row row-content text-center">
+                <div class="col-12">
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook-square fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter-square fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://linkedin.com"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>
