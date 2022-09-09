@@ -64,16 +64,16 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 50%;
+    height: 40%;
 }
 
 #spacesHero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2 )), url("/img/honeycomb.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/img/honeycomb.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 50%; 
+    height: 40%; 
 }
 
 #bookTourButton {
@@ -116,7 +116,7 @@ div {
     }
 }
 
-h3 {
+h3, h4 {
     font-family: $acme-font;
     color: $color-russian-violet;
 }
